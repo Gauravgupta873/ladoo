@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤</h1>
+        <p>You make my world brighter, and I can't imagine my life without you!</p>
+        <div class="buttons">
+            <button id="yes-btn">Yes, I will! 💖</button>
+            <button id="no-btn">No 😢</button>
+        </div>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            document.getElementById("response").innerHTML = "Yay! I knew you would say yes! 💕🎉";
+        });
+
+        document.getElementById("no-btn").addEventListener("click", function() {
+            document.getElementById("response").innerHTML = "Oh no! But I'll keep trying until you say yes! 🥺❤";
+        });
+    </script>
+</body>
+</html>
